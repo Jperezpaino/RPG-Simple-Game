@@ -7,7 +7,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
 import es.noa.rad.game.engine.event.KeyHandler;
 
   /**
-   * @see es.noa.rad.game.rpgs2d.entity.Entity
+   * @see es.noa.rad.game.engine.entity.Entity
    */
   public class Player
       extends Entity {

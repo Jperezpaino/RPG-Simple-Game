@@ -124,7 +124,6 @@ import es.noa.rad.game.engine.core.component.GamePanel;
       _graphics2D.drawImage(water, cell[4], cell[5], tileSize, tileSize, null);
       _graphics2D.drawImage(water, cell[5], cell[5], tileSize, tileSize, null);
       _graphics2D.drawImage(water, cell[6], cell[5], tileSize, tileSize, null);
-
     }
 
   }

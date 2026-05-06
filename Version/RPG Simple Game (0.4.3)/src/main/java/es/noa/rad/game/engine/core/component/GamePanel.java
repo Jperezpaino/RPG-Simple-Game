@@ -146,6 +146,20 @@ import es.noa.rad.game.engine.map.tile.TileManager;
     }
 
     /**
+     * @return {@code TileManager}
+     */
+    public final TileManager getTileManager() {
+      return this.tileManager;
+    }
+
+    /**
+     * @return {@code Player}
+     */
+    public final Player getPlayer() {
+      return this.player;
+    }
+
+    /**
      *
      */
     public final void startGameThread() {

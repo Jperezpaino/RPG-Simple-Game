@@ -69,10 +69,10 @@ import es.noa.rad.game.engine.core.component.GamePanel;
            && (parts.length >= 3)) {
             final int idTile = Integer.parseInt(parts[0].trim());
             // final String nameTile = parts[1].trim();
-            final String imageTilePath = parts[2].trim();
+            final String imagePathTile = parts[2].trim();
             this.tiles[idTile] = new Tile();
             (this.tiles[idTile]).setImage(
-              ImageIO.read(this.getClass().getResourceAsStream(imageTilePath)));
+              ImageIO.read(this.getClass().getResourceAsStream(imagePathTile)));
           }
         }
       } catch (

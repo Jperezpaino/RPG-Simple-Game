@@ -113,6 +113,20 @@ import es.noa.rad.game.engine.event.KeyHandler;
     /**
      * @return {@code int}
      */
+    public final int getMaxScreenColumns() {
+      return GamePanel.MAX_SCREEN_COLUMNS;
+    }
+
+    /**
+     * @return {@code int}
+     */
+    public final int getMaxScreenRows() {
+      return GamePanel.MAX_SCREEN_ROWS;
+    }
+
+    /**
+     * @return {@code int}
+     */
     public final int getScreenWidth() {
       return GamePanel.SCREEN_WIDTH;
     }
@@ -122,6 +136,13 @@ import es.noa.rad.game.engine.event.KeyHandler;
      */
     public final int getScreenHeight() {
         return GamePanel.SCREEN_HEIGHT;
+    }
+
+    /**
+     * @return {@code Player}
+     */
+    public final Player getPlayer() {
+      return this.player;
     }
 
     /**
