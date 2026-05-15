@@ -31,7 +31,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
       final TileManager tileManager
         = this.gamePanel.getTileManager();
 
-      /* 
+      /*
        * Calculate in pixels the position of each of the entity's edges.
        */
       final int entityLeftWorldX
@@ -76,7 +76,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
             = tileManager.getMapTileData(entityLeftCol, entityTopRow);
           final int tileTopRightValue
             = tileManager.getMapTileData(entityRightCol, entityTopRow);
-          if ((tileManager.getTile(tileTopLeftValue)).isCollision() 
+          if ((tileManager.getTile(tileTopLeftValue)).isCollision()
            || (tileManager.getTile(tileTopRightValue)).isCollision()) {
             _entity.setCollision(true);
           }
@@ -94,7 +94,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
             = tileManager.getMapTileData(entityLeftCol, entityBottomRow);
           final int tileBottomRightValue
             = tileManager.getMapTileData(entityRightCol, entityBottomRow);
-          if ((tileManager.getTile(tileBottomLeftValue)).isCollision() 
+          if ((tileManager.getTile(tileBottomLeftValue)).isCollision()
            || (tileManager.getTile(tileBottomRightValue)).isCollision()) {
             _entity.setCollision(true);
           }
@@ -112,7 +112,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
             = tileManager.getMapTileData(entityLeftCol, entityTopRow);
           final int tileLeftBottomValue
             = tileManager.getMapTileData(entityLeftCol, entityBottomRow);
-          if ((tileManager.getTile(tileLeftTopValue)).isCollision() 
+          if ((tileManager.getTile(tileLeftTopValue)).isCollision()
            || (tileManager.getTile(tileLeftBottomValue)).isCollision()) {
             _entity.setCollision(true);
           }
@@ -130,7 +130,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
             = tileManager.getMapTileData(entityRightCol, entityTopRow);
           final int tileRightBottomValue
             = tileManager.getMapTileData(entityRightCol, entityBottomRow);
-          if ((tileManager.getTile(tileRightTopValue)).isCollision() 
+          if ((tileManager.getTile(tileRightTopValue)).isCollision()
            || (tileManager.getTile(tileRightBottomValue)).isCollision()) {
             _entity.setCollision(true);
           }

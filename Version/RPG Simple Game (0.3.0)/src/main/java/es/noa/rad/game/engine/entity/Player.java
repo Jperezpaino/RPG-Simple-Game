@@ -75,6 +75,7 @@ import es.noa.rad.game.engine.event.KeyHandler;
         this.gamePanel.getTileSize(),
         this.gamePanel.getTileSize()
       );
+
     }
 
   }

@@ -13,7 +13,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
       extends JFrame {
 
     /**
-     * Serial version UID for serialization compatibility.
+     *
      */
     private static final long serialVersionUID = 1L;
 
@@ -45,10 +45,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
     }
 
     /**
-     * Application entry point.
-     *
      * @param _arguments {@code String...}
-     *   Command line arguments (currently unused).
      */
     public static void main(
         final String... _arguments) {

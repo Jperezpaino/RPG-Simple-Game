@@ -67,6 +67,8 @@ import es.noa.rad.game.engine.core.component.GamePanel;
       int x = 0;
       int y = 0;
 
+      final int tileSize = this.gamePanel.getTileSize();
+
       while ((column < this.gamePanel.getMaxScreenColumns())
           && (row < this.gamePanel.getMaxScreenRows())) {
 
@@ -74,18 +76,18 @@ import es.noa.rad.game.engine.core.component.GamePanel;
           (this.tiles[0]).getImage(),
           x,
           y,
-          this.gamePanel.getTileSize(),
-          this.gamePanel.getTileSize(),
+          tileSize,
+          tileSize,
           null
         );
 
         column++;
-        x += this.gamePanel.getTileSize();
+        x += tileSize;
         if (column == this.gamePanel.getMaxScreenColumns()) {
           column = 0;
           x = 0;
           row++;
-          y += this.gamePanel.getTileSize();
+          y += tileSize;
         }
       }
     }

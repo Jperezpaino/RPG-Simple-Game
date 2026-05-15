@@ -165,7 +165,7 @@ import es.noa.rad.game.engine.event.KeyHandler;
         super.setCollision(false);
         this.gamePanel.getCollision().collisionTile(this);
 
-        /* if collision is false, player can move. */
+        /* If collision is false, player can move. */
         if (!super.isCollision()) {
           switch (super.getDirection()) {
             case "up":
@@ -184,7 +184,7 @@ import es.noa.rad.game.engine.event.KeyHandler;
             break;
           }
         }
-        
+
         super.setSpriteCounter(super.getSpriteCounter() + 1);
         if (super.getSpriteCounter() > 12) {
           if (super.getSpriteNum() == 0) {

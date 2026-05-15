@@ -54,7 +54,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
     /**
      *
      */
-    private static final int MAX_WORLD_COLUMNS  = 40;
+    private static final int MAX_WORLD_COLUMNS = 40;
 
     /**
      *
@@ -185,14 +185,14 @@ import es.noa.rad.game.engine.map.tile.TileManager;
      * @return {@code int}
      */
     public final int getScreenHeight() {
-        return GamePanel.SCREEN_HEIGHT;
+      return GamePanel.SCREEN_HEIGHT;
     }
 
     /**
      * @return {@code int}
      */
     public final int getWorldHeight() {
-        return GamePanel.WORLD_HEIGHT;
+      return GamePanel.WORLD_HEIGHT;
     }
 
     /**

@@ -10,6 +10,7 @@ package es.noa.rad.game.engine.asset.object;
      *
      */
     public KeyObject() {
+      super();
       super.setName("key");
     }
 

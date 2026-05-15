@@ -79,7 +79,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
         final InputStream inputStream
           = this.getClass().getResourceAsStream(_mapFilePath);
         final BufferedReader bufferedReader
-          = new BufferedReader(new InputStreamReader(inputStream));
+           = new BufferedReader(new InputStreamReader(inputStream));
 
         int column = 0;
         int row = 0;

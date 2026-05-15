@@ -31,7 +31,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
       final TileManager tileManager
         = this.gamePanel.getTileManager();
 
-      /* 
+      /*
        * Calculate in pixels the position of each of the entity's edges.
        */
       final int entityLeftWorldX
@@ -90,7 +90,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
             = tileManager.getMapTileData(entityLeftCol, entityTopRow);
           final int tileTopRightValue
             = tileManager.getMapTileData(entityRightCol, entityTopRow);
-          if ((tileManager.getTile(tileTopLeftValue)).isCollision() 
+          if ((tileManager.getTile(tileTopLeftValue)).isCollision()
            || (tileManager.getTile(tileTopRightValue)).isCollision()) {
             _entity.setCollision(true);
             System.out.println("Collision on Top");

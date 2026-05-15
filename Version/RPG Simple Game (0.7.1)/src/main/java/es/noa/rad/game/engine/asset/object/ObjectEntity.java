@@ -12,6 +12,9 @@ import es.noa.rad.game.engine.core.component.GamePanel;
    */
   public abstract class ObjectEntity {
 
+    /**
+     *
+     */
     public static final int MAX_NUM_OBJECTS = 10;
 
     /**
@@ -37,14 +40,14 @@ import es.noa.rad.game.engine.core.component.GamePanel;
     /**
      *
      */
-    private boolean collision;
+    private boolean collidable;
 
     /**
      *
      */
     protected ObjectEntity() {
       super();
-      this.collision = false;
+      this.collidable = false;
     }
 
     /**
@@ -110,16 +113,16 @@ import es.noa.rad.game.engine.core.component.GamePanel;
     /**
      * @return {@code boolean}
      */
-    protected final boolean isCollision() {
-      return this.collision;
+    protected final boolean isCollidable() {
+      return this.collidable;
     }
 
     /**
-     * @param _collision {@code boolean}
+     * @param _collidable {@code boolean}
      */
-    protected final void setCollision(
-        final boolean _collision) {
-      this.collision = _collision;
+    protected final void setCollidable(
+        final boolean _collidable) {
+      this.collidable = _collidable;
     }
 
     /**
@@ -129,17 +132,17 @@ import es.noa.rad.game.engine.core.component.GamePanel;
     public final void draw(
         final GamePanel _gamePanel,
         final Graphics2D _graphics2D) {
-      
+
       final int playerWorldX = _gamePanel.getPlayer().getWorldX();
       final int playerWorldY = _gamePanel.getPlayer().getWorldY();
       final int playerScreenX = _gamePanel.getPlayer().getScreenX();
       final int playerScreenY = _gamePanel.getPlayer().getScreenY();
-      
+
       final int screenX = (this.worldX - playerWorldX + playerScreenX);
       final int screenY = (this.worldY - playerWorldY + playerScreenY);
-      
+
       final int tileSize = _gamePanel.getTileSize();
-      
+
       if (((this.worldX + tileSize) > (playerWorldX - playerScreenX))
        && ((this.worldX - tileSize) < (playerWorldX + playerScreenX))
        && ((this.worldY + tileSize) > (playerWorldY - playerScreenY))
@@ -155,7 +158,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
           /* Keep original conditions. */
           final Color originalColor = _graphics2D.getColor();
           final Font originalFont = _graphics2D.getFont();
-          
+
           /* Draw the object's bounding box. */
           _graphics2D.setColor(Color.red);
           _graphics2D.drawRect(
@@ -182,7 +185,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
            + " World Y: " + this.getWorldY()),
             (screenX + positionX),
             (screenY + (positionY * 2))
-           );
+          );
 
           /* Restores the entire graphical state. */
           _graphics2D.setFont(originalFont);

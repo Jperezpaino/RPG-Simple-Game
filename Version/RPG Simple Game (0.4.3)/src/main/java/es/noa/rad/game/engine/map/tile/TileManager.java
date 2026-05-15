@@ -79,7 +79,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
         final InputStream inputStream
           = this.getClass().getResourceAsStream(_mapFilePath);
         final BufferedReader bufferedReader
-          = new BufferedReader(new InputStreamReader(inputStream));
+           = new BufferedReader(new InputStreamReader(inputStream));
 
         int column = 0;
         int row = 0;
@@ -115,6 +115,8 @@ import es.noa.rad.game.engine.core.component.GamePanel;
       int x = 0;
       int y = 0;
 
+      final int tileSize = this.gamePanel.getTileSize();
+
       while ((column < this.gamePanel.getMaxScreenColumns())
           && (row < this.gamePanel.getMaxScreenRows())) {
         final int tileNum = this.mapTileData[column][row];
@@ -123,18 +125,18 @@ import es.noa.rad.game.engine.core.component.GamePanel;
           (this.tiles[tileNum]).getImage(),
           x,
           y,
-          this.gamePanel.getTileSize(),
-          this.gamePanel.getTileSize(),
+          tileSize,
+          tileSize,
           null
         );
 
         column++;
-        x += this.gamePanel.getTileSize();
+        x += tileSize;
         if (column == this.gamePanel.getMaxScreenColumns()) {
           column = 0;
           x = 0;
           row++;
-          y += this.gamePanel.getTileSize();
+          y += tileSize;
         }
       }
     }

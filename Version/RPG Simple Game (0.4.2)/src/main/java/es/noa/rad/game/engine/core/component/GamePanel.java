@@ -142,7 +142,7 @@ import es.noa.rad.game.engine.map.tile.TileManager;
      * @return {@code int}
      */
     public final int getScreenHeight() {
-        return GamePanel.SCREEN_HEIGHT;
+      return GamePanel.SCREEN_HEIGHT;
     }
 
     /**

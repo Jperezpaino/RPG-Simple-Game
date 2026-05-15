@@ -60,7 +60,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
         final InputStream inputStream
           = this.getClass().getResourceAsStream("/assets/map/world/tile.info");
         final BufferedReader bufferedReader
-         = new BufferedReader(new InputStreamReader(inputStream));
+          = new BufferedReader(new InputStreamReader(inputStream));
 
         String line;
         while ((line = bufferedReader.readLine()) != null) {
@@ -68,7 +68,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
           if ((!line.isBlank())
            && (parts.length >= 3)) {
             final int idTile = Integer.parseInt(parts[0].trim());
-            // final String nameTile = parts[1].trim();
+            /* final String nameTile = parts[1].trim(); */
             final String imagePathTile = parts[2].trim();
             this.tiles[idTile] = new Tile();
             (this.tiles[idTile]).setImage(
@@ -90,7 +90,7 @@ import es.noa.rad.game.engine.core.component.GamePanel;
         final InputStream inputStream
           = this.getClass().getResourceAsStream(_mapFilePath);
         final BufferedReader bufferedReader
-          = new BufferedReader(new InputStreamReader(inputStream));
+           = new BufferedReader(new InputStreamReader(inputStream));
 
         int column = 0;
         int row = 0;
